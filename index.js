@@ -101,7 +101,7 @@ export default class Grid extends Component {
       };
     } else {
       return {
-        dataSource: prevState.dataSource.cloneWithRows(prepareData(nextProps))
+        dataSource: prevState.dataSource && prevState.dataSource.cloneWithRows(prepareData(nextProps))
       };
     }
   }
